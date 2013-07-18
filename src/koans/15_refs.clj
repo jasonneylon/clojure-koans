@@ -29,11 +29,4 @@
   (= 20 (do
           (dosync (alter the-world (fn [x] (+ 20 x))))))
 
-  "Two worlds are better than one"
-  (comment  (= ["Real Jerry" "Bizarro Jerry"]
-               (do
-                 (dosync
-                  (ref-set the-world {})
-                  (alter the-world assoc :jerry "Real Jerry")
-                  (alter bizarro-world assoc :jerry "Bizarro Jerry")
-                  (vals the-world))))))
+ )
